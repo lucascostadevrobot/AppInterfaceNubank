@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AppCustomizandoLayout</string>
+
+    <!--Inicialização das Strings App NuIdeal -->
+    <string name="text_logo_telaincial">NuIdeal</string>
+    <string name="img_logo_telainicial">imagem logo nuideal</string>
+    <string name="text_Faturaatual_telainicial">Fatura atual</string>
+    <string name="text_valorreal_telainicial">R$ 1.554,80</string>
+
+
+</resources>
