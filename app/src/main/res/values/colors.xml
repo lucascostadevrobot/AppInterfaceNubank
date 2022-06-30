@@ -9,5 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <!--Inicialização da paleta de cores Interface NuIdeal-->
     <color name="background_app">#9c44dc</color>
+    <color name="color_progressbar">#FB1212</color>
 
 </resources>

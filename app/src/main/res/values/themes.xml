@@ -14,7 +14,9 @@
 
         <!--Definindo background da nossa aplicação-->
         <item name="android:windowBackground">@color/background_app</item>
-        <!--Retirand ActionBar-->
+
+        <!--Definindo cores para componentes-->
+        <item name="android:progressBackgroundTint">@color/color_progressbar</item>
 
         <!-- Customize your theme here. -->
     </style>

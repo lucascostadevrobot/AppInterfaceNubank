@@ -8,6 +8,7 @@
     <string name="img_icone_cartaocredito_telainicial">Icone cartao de credito</string>
     <string name="text_cardfatura_telainicial">Fatura atual</string>
     <string name="txt_valoreal_telainicial">R$ 1.554,80</string>
+    <string name="recolher_cardview">icone recolhe cardview</string>
 
 
 </resources>

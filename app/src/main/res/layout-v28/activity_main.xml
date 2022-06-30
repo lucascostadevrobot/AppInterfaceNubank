@@ -117,9 +117,8 @@
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="100dp"
-                android:layout_marginStart="-300dp"
-                android:outlineAmbientShadowColor="@color/color_progressbar"
-                tools:targetApi="p" />
+                android:layout_marginLeft="-300dp"
+                android:outlineAmbientShadowColor="@color/color_progressbar"/>
         </androidx.appcompat.widget.LinearLayoutCompat>
 
     </androidx.cardview.widget.CardView>
