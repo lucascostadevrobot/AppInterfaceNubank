@@ -9,6 +9,8 @@
     <string name="text_cardfatura_telainicial">Fatura atual</string>
     <string name="txt_valoreal_telainicial">R$ 1.554,80</string>
     <string name="recolher_cardview">icone recolhe cardview</string>
+    <string name="text_limitedisponivel">Limite disponível</string>
+    <string name="text_limitereal">R$ 245,20</string>
 
 
 </resources>
