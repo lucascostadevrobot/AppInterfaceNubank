@@ -6,8 +6,8 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "lucascosta.dev.appcustomizandolayout"
-        minSdk 23
+        applicationId "lucascosta.dev.appinterfacenubank"
+        minSdk 19
         targetSdk 32
         versionCode 1
         versionName "1.0"

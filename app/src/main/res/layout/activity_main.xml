@@ -6,160 +6,109 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="8dp"
-        android:layout_height="858dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/cardView"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </ScrollView>
-
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="42dp"
-        android:layout_height="45dp"
-        android:contentDescription="@string/img_logo_telainicial"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.106"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.059"
-        app:srcCompat="@drawable/nubank_white" />
-
-    <TextView
-        android:id="@+id/textView"
+        android:id="@+id/imagem_visible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/text_logo_telainicial"
-        android:textColor="#F1F8E9"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/img_visible_inicial"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.034"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.073" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/visible_telainicial"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintHorizontal_bias="0.759"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.073"
         app:srcCompat="@drawable/ic_baseline_visibility_off_24" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/image_menu_superior"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/img_menu_telainicial"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.811"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toEndOf="@+id/imagem_visible"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.073"
         app:srcCompat="@drawable/ic_baseline_menu_24" />
 
+    <!--Inicializando o 1º CardView-->
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
-        android:layout_width="0dp"
-        android:layout_height="178dp"
-        android:layout_marginStart="13dp"
-        android:layout_marginEnd="2dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/scrollView2"
+    <ImageView
+        android:id="@+id/image_visible_menu"
+        android:layout_width="47dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/imagem_visible"
+        app:layout_constraintHorizontal_bias="0.31"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.226">
+        app:srcCompat="@drawable/logo_nuideal20" />
 
+    <TextView
+        android:id="@+id/text_nuideal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
+        android:text="NuIdeal"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/image_visible_menu"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.appcompat.widget.LinearLayoutCompat
+    <androidx.cardview.widget.CardView
+        android:layout_width="371dp"
+        android:layout_height="210dp"
+        android:layout_margin="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.177">
+        -->
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:text="Fatura atual"/>
 
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="35dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="-90dp"
-                android:contentDescription="@string/img_icone_cartaocredito_telainicial"
-                app:srcCompat="@drawable/card_credito" />
+        <ImageView
+            android:id="@+id/recolhecardview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/ic_baseline_keyboard_arrow_up_24" />
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="35dp"
-                android:text="@string/text_cardfatura_telainicial"
-                android:textColor="@color/black"
-                android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="-5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/card_credito" />
 
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="-100dp"
-                android:layout_marginTop="70dp"
-                android:text="@string/txt_valoreal_telainicial"
-                android:textColor="@color/black"
-                android:textStyle="bold" />
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="45dp" />
 
-            <ImageView
-                android:id="@+id/imageView6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="200dp"
-                android:layout_marginTop="20dp"
-                android:contentDescription="@string/recolher_cardview"
-                app:srcCompat="@drawable/ic_baseline_expand_less_24" />
-
-            <ProgressBar
-                android:id="@+id/progressBar"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="-300dp"
-                android:layout_marginTop="100dp"
-                android:outlineAmbientShadowColor="@color/color_progressbar"
-                tools:targetApi="p" />
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="-300dp"
-                android:layout_marginTop="110dp"
-                android:text="@string/text_limitedisponivel" />
-
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="-86dp"
-                android:layout_marginTop="110dp"
-                android:text="@string/text_limitereal"
-                android:textColor="@color/black"
-                android:textStyle="bold" />
-
-
-
-        </androidx.appcompat.widget.LinearLayoutCompat>
 
     </androidx.cardview.widget.CardView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-

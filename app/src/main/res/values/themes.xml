@@ -1,9 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.AppCustomizandoLayout" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.AppInterfaceNubank" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/background_app</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -11,13 +11,9 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-
-        <!--Definindo background da nossa aplicação-->
-        <item name="android:windowBackground">@color/background_app</item>
-
-        <!--Definindo cores para componentes-->
-        <item name="android:progressBackgroundTint">@color/color_progressbar</item>
-
         <!-- Customize your theme here. -->
+
+        <!--Background Tela inicial new do Aplicativo-->
+        <item name="android:windowBackground">@color/background_telainicial</item>
     </style>
 </resources>
