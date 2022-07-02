@@ -48,7 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="8dp"
         android:text="NuIdeal"
         android:textColor="@color/white"
         android:textStyle="bold"
@@ -56,6 +56,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
         android:layout_width="371dp"
         android:layout_height="210dp"
         android:layout_margin="10dp"
@@ -78,10 +79,10 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="15dp"
+            android:text="Fatura atual"
             android:textColor="@color/black"
-            android:textStyle="bold"
             android:textSize="16dp"
-            android:text="Fatura atual"/>
+            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/recolhecardview1"
@@ -95,20 +96,92 @@
             android:id="@+id/imageView5"
             android:layout_width="50dp"
             android:layout_height="30dp"
-            android:layout_marginTop="10dp"
             android:layout_marginLeft="-5dp"
+            android:layout_marginTop="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@drawable/card_credito" />
 
+        <TextView
+            android:id="@+id/text_valorreal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:text="R$ 1.545,60"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
         <ProgressBar
             android:id="@+id/progressBar"
             style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="300dp"
+            android:layout_width="260dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="45dp" />
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="70dp" />
 
+        <TextView
+            android:id="@+id/text_limtedisponivel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="84dp"
+            android:text="Limite disponível" />
+
+        <TextView
+            android:id="@+id/text_limiteatual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="155dp"
+            android:layout_marginTop="84dp"
+            android:text="R$ 254, 65"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/dividercard1"
+            android:layout_width="270dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="110dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/text_resumofatura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="115dp"
+            android:text="Resumo das faturas"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="115dp"
+            app:srcCompat="@drawable/ic_baseline_arrow_forward_ios_24" />
 
     </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="377dp"
+        android:layout_height="153dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.0">
+
+    </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
